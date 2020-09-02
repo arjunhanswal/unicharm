@@ -1,0 +1,6 @@
+framework module Pods_UniCharm {
+  umbrella header "Pods-UniCharm-umbrella.h"
+
+  export *
+  module * { export * }
+}

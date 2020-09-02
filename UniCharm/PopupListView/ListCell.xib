@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" id="Yti-zD-7fY" customClass="ListCell" customModule="ReactVendor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yti-zD-7fY" id="dPG-g4-bcc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TX-6B-q5c">
+                        <rect key="frame" x="20" y="15" width="280" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCn-ZP-dnD">
+                        <rect key="frame" x="20" y="44.5" width="280" height="0.5"/>
+                        <color key="backgroundColor" name="buttonDark"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Ez8-rp-1te"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4TX-6B-q5c" secondAttribute="trailing" constant="20" id="6eD-Wo-dbQ"/>
+                    <constraint firstAttribute="bottom" secondItem="aCn-ZP-dnD" secondAttribute="bottom" constant="5" id="8Ns-fX-nXb"/>
+                    <constraint firstItem="aCn-ZP-dnD" firstAttribute="leading" secondItem="4TX-6B-q5c" secondAttribute="leading" id="AYm-At-CFR"/>
+                    <constraint firstItem="4TX-6B-q5c" firstAttribute="leading" secondItem="dPG-g4-bcc" secondAttribute="leading" constant="20" id="fu2-n0-j25"/>
+                    <constraint firstAttribute="bottom" secondItem="4TX-6B-q5c" secondAttribute="bottom" constant="15" id="j6N-jb-KRd"/>
+                    <constraint firstItem="aCn-ZP-dnD" firstAttribute="trailing" secondItem="4TX-6B-q5c" secondAttribute="trailing" id="nVe-bD-myM"/>
+                    <constraint firstItem="4TX-6B-q5c" firstAttribute="top" secondItem="dPG-g4-bcc" secondAttribute="top" constant="15" id="tge-kn-PQ3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblName" destination="4TX-6B-q5c" id="3Ru-wa-WAS"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="44.866071428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="buttonDark">
+            <color red="0.71799999475479126" green="0.71799999475479126" blue="0.71799999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
